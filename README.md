@@ -38,6 +38,9 @@ RutubePlayer player = (RutubePlayer)fragmentManager.findFragmentById(R.id.rutube
 ```
 где `R.id.rutubeFragment` идентификатор фрагмента. 
 
+Так же ***необходимо*** добавить в манифест приложения в настройки Activity, содержащего плеер,
+свойство `android:configChanges="orientation|screenSize"`.
+
 ## Общий концепт взаимодействия с плеером
 
 Взаимодействие с плеером происходит посредством плагинов.
